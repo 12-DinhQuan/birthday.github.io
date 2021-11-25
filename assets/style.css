@@ -1,0 +1,540 @@
+body {
+    background-color: violet;
+}
+
+.fa-gift {
+    color: #ff0022;
+}
+
+:root {
+    --black__color: #000;
+    --while__color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-while {
+    color: var(--while__color) !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-4 {
+    width: 47%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+#header {
+    width: 100vw;
+    height: 47px;
+    background-color: #a72ca9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+}
+
+#header > h2 {
+    color: var(--while__color);
+    line-height: 47px;
+}
+
+#nav {
+    display: inline-flex;
+    list-style: none;
+}
+
+
+.nav-item__link {
+    text-decoration: none;
+    color: var(--while__color);
+    font-size: 22px;
+    padding: 11px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item__link:hover {
+    background-color: #ccc;
+    color: var(--black__color);
+}
+
+.nav-icon__down {
+    margin-left: 8px;
+}
+
+.nav-item__more {
+    position: relative;
+}
+
+.subnav {
+    list-style: none;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
+    background-color: var(--while__color);
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.subnav>li>.nav-item__link {
+    color: var(--black__color);
+}
+
+.nav-item__more:hover .subnav {
+    display: block;
+}
+#header .mobi-menu-btn,
+#header .seach-btn {
+    margin-left: auto;
+    color: var(--while__color);
+    padding: 12.5px 20px;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobi-menu-btn {
+    display: none;
+}
+
+#header .mobi-menu-btn:hover {
+    background-color: #ccc;
+    color: var(--black__color);
+}
+#header .seach-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider {
+    position: relative;
+    margin-top: 47px;
+    padding-top: 50%;
+    background: url('./img/slide/qq4.png') top center / cover no-repeat;
+    background-size: contain;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: var(--while__color);
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-drectinon {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+/* content */
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .section-heading {
+    text-align: center;
+    font-size: 50px;
+    color: #ff0022;
+    font-weight: 500;
+    /* letter-spacing: 4px; */
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+#content .section-heading:hover .gift_items {
+    display: block;
+}
+
+.gift_items {
+    color: var(--while__color);
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #fa76c7;
+    padding: 8px;
+    display: none;
+    position: absolute;
+}
+
+.section-slogan {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.about-text {
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#content .team-list {
+    display: flex;
+    margin-top: 48px;
+    justify-content: space-around;
+}
+
+#content .nember-item {
+    width: 30%;
+    text-align: center;
+}
+
+#content .nember-name {
+    font-size: 20px;
+    /* color: rgb(255, 255, 255); */
+    opacity: 0.7;
+}
+
+#content .nember-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* tour */
+
+.tour-section {
+    /* background-color: var(--black__color); */
+}
+
+.bock-list {
+    list-style: none;
+    background-color: var(--while__color);
+    margin-top: 40px;
+}
+
+.bock-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+}
+
+.Sold-out {
+    color: var(--while__color);
+    background-color: #f44336;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    color: var(--while__color);
+    background-color: var(--black__color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+
+.places-list {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.place-item {
+    width: 31%;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.7;
+}
+
+.place-body {
+    background-color: var(--while__color);
+    padding: 16px 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+}
+
+.place-time {
+    color: #757575;
+    padding-top: 15px;
+}
+
+.place-desc {
+    padding-top: 15px;
+    line-height: 16px;
+}
+
+.place-btn {
+    margin-top: 16px;
+    color: var(--while__color);
+    background-color: var(--black__color);
+    padding: 11px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.place-btn:hover {
+    color: var(--black__color);
+    background-color: #ccc;
+}
+
+.contact-conten {
+    margin-top: 48px;
+}
+
+.contact-infor {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-infor a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-infor a:hover {
+    opacity: 1;
+}
+
+.contact-infor i {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.form-submit {
+    color: var(--while__color);
+    background-color: rgb(255, 4, 87);
+    border: none;
+    padding: 10px 16px;
+    float: right;
+}
+
+.form-submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: var(--while__color);
+    width: 900px;
+    max-width: calc(100% - 16px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFaceIn ease 0.5s;
+}
+
+
+
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--while__color);
+}
+
+.modal-header>i {
+    margin-right: 16px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--while__color);
+    padding: 12px;
+}
+
+.modal-close:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-label {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+
+#buy-ticker {
+    background-color: #009688;
+    border: none;
+    color: var(--while__color);
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 14px;
+}
+
+#buy-ticker:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #009688;
+}
+
+
+.map-img {
+    width: 100%;
+}
+/* modal-footer */
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socsal-list a{
+    font-size: 24px;
+    color: var(--black__color);
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+#footer .socsal-list a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#footer .coppyright {
+    margin-top: 15px;
+    color: var(--black__color);
+    opacity: 0.6;
+}
+
+#footer .coppyright>a {
+    padding: 10px 0;
+}
+
+@keyframes modalFaceIn {
+    from {
+        transform: translateY(-140px);
+        opacity: 0.6;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.open {
+    margin-top: 70px;
+    height: 30px;
+    width: 100vw;
+    color: var(--while__color);
+    align-items: center;
+    text-align: center;
+}
+.open>span {
+    margin: 0 12px;
+}

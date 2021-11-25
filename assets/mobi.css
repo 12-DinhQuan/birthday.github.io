@@ -1,0 +1,70 @@
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+
+
+@media (max-width: 46.1875em) {
+    #header {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+    }
+    #header .mobi-menu-btn {
+        display: block;
+    }
+    #nav {
+        display: flex;
+        flex-direction: column;
+    }
+    #nav>li:first-child {
+        display: flex;
+    }
+    .seach-btn {
+        display: none;
+    }
+    .subnav {
+        position: initial;
+        background-color: #333;
+    }
+    .subnav>li>.nav-item__link {
+        color: var(--while__color);
+        padding: 10px 36px;
+    }
+
+    .text-content {
+        display: none;
+    }
+
+    #content .team-list {
+        flex-direction: column;
+    }
+
+    #content .nember-item {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    #content .nember-img {
+        width: 60%;
+    }
+
+    .places-list {
+        flex-direction: column;
+    }
+
+    .place-item {
+        width: 100%;
+    }
+
+    .contact-conten {
+        flex-direction: column;
+    }
+
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+    .contact-form {
+        margin: 16px 0;
+    }
+}    
